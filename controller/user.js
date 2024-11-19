@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken")
 
 const { User, Cv } = require("../database/databaseConfig");
-const generateAcessToken = require('../utils/utils').generateAcessToken
+const {generateAcessToken} = require('../utils/utils')
 
 
 Cv.find().then(data=>{
